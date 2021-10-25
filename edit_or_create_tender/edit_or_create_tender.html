@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="../flex.css">
+<link rel="stylesheet" type="text/css" href="edit_or_create_tender.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+<div class="edit-or-create-tender">
+	<form action="" method="POST" class=" flex col">
+		<span class="flex justify-between">
+			<label class="title">Технологическое оборудование</label>
+			<label class="save-btn flex align-center">Сохранить <img src="../images/edit_or_create_tender/save.png" alt=""></label>
+		</span>
+		<span class="flex categories">
+			<label class="category flex justify-between align-center">Технологическое оборудование <img src="../images/edit_or_create_tender/close.png" alt=""></label>
+			<label class="category sub flex justify-between align-center">Оборудование для национальных кухонь <img src="../images/edit_or_create_tender/close.png" alt=""></label>
+			<label class="category sub flex justify-between align-center">Хлебопекарное и кондитерское оборудование <img src="../images/edit_or_create_tender/close.png" alt=""></label>
+			<button type="button" class="btn">Добавить категорию</button>
+			<button type="button" class="btn sub">Добавить подкатегорию</button>
+		</span>
+
+		<span class="flex">
+			<label class="flex col">
+				<span class="undertext">срок подачи заявки</span>
+				<label for="date-application" class="flex justify-between align-center">
+					<img src="../images/edit_or_create_tender/clock.png" alt="">
+					<span class="label">_ _._ _._ _ _ _</span>
+				</label>
+				<input type="date" id="date-application" required hidden>
+			</label>
+		</span>
+	</form>
+</div>
