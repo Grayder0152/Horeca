@@ -1,0 +1,73 @@
+ .flex {
+	 display: flex;
+}
+ .flex.row {
+	 flex-direction: row;
+}
+ .flex.col {
+	 flex-direction: column;
+}
+ .flex.flex-1 {
+	 flex: 1;
+}
+ .flex.align-center {
+	 align-items: center;
+}
+ .flex.align-start {
+	 align-items: flex-start;
+}
+ .flex.align-end {
+	 align-items: flex-end;
+}
+ .flex.justify-center {
+	 justify-content: center;
+}
+ .flex.justify-evenly {
+	 justify-content: space-evenly;
+}
+ .flex.justify-between {
+	 justify-content: space-between;
+}
+ .flex.justify-end {
+	 justify-content: flex-end;
+}
+ .relative {
+	 position: relative;
+}
+ .absolute {
+	 position: absolute;
+}
+ .btn {
+	 height: 48px;
+	 border: 2px solid #feac5e;
+	 border-radius: 3px;
+	 background-color: transparent;
+	 cursor: pointer;
+	 color: #feac5e;
+}
+ .btn.bordered {
+	 color: #feac5e;
+	 background-color: white;
+}
+ .btn.filled {
+	 color: white;
+	 background-color: #feac5e;
+}
+ .input {
+	 display: flex;
+	 align-self: center;
+	 height: 48px;
+	 width: 100%;
+	 border: 1px solid #d9d9d9;
+	 border-radius: 3px;
+	 padding: 0 12px;
+	 outline: none;
+}
+ .input:focus-within, .input:focus {
+	 border-color: #4bc0c8;
+}
+ .input.error {
+	 border-color: #fa0f0f;
+	 color: #fa0f0f;
+}
+ 
