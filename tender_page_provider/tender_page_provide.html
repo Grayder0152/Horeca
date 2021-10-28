@@ -1,0 +1,147 @@
+<link rel="stylesheet" type="text/css" href="../flex.css">
+<link rel="stylesheet" type="text/css" href="../fonts.css">
+
+<link rel="stylesheet" type="text/css" href="../edit_or_create_tender/edit_or_create_tender.css">
+<link rel="stylesheet" type="text/css" href="../tender_with_file/tender_with_file.css">
+
+<div class="edit-or-create-tender relative">
+	<form method="POST" action="" class="flex col edit">
+		<div class="flex justify-between">
+			<label class="font-inter-max bold">Технологическое оборудование</label>
+			<a href="#" class="save-btn flex align-center font-open-sans">Редактировать <img src="../images/tender_with_file/edit.svg" alt=""></a>
+		</div>
+
+		<div class="flex border-bottom categories">
+			<label class="category font-open-sans flex justify-between align-center relative">Технологическое оборудование</label>
+			<label class="category font-open-sans sub flex justify-between align-center relative">Оборудование для национальных кухонь</label>
+			<label class="category font-open-sans sub flex justify-between align-center relative">Хлебопекарное и кондитерское оборудование</label>
+		</div>
+
+		<div class="flex justify-between border-bottom" style="padding-bottom: 19px;">
+			<div class="flex">
+				<label class="flex col">
+					<span class="font-open-sans-min">срок подачи заявки</span>
+					<label for="date-application" class="flex justify-between align-center">
+						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
+						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
+					</label>
+				</label>
+				<span class="border"></span>
+				<label class="flex col">
+					<span class="font-open-sans-min">количество</span>
+					<label for="number" class="flex justify-between align-center">
+						<span class="font-open-sans bold" style="margin-top: 4px;">1000</span>
+						<input type="number" id="number" class="font-open-sans bold" required hidden>
+					</label>
+				</label>
+				<span class="border"></span>
+				<label class="flex col">
+					<span class="font-open-sans-min">срок поставки</span>
+					<label for="term-delivery" class="flex justify-between align-center">
+						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
+						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
+					</label>
+				</label>
+			</div>
+			<span class="text-red font-open-sans">Ожидается выбор поставщика</span>
+		</div>
+
+		<div class="border-bottom" style="padding-bottom: 19px;">
+			<label for="address">
+				<img src="../images/edit_or_create_tender/address.svg" alt="" style="margin-right: 17px;">
+				<input type="text" id="address" value="Адресс доставки" class="font-open-sans bold" required>
+			</label>
+		</div>
+
+		<div class="textarea font-open-sans">
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa.
+			<ul class="flex col">
+				<li class="relative">Lorem ipsum dolor sit amet</li>
+				<li class="relative">Lorem ipsum dolor sit amet</li>
+				<li class="relative">Lorem ipsum dolor sit amet</li>
+			</ul>
+		</div>
+		<div class="border-bottom">
+			<div class="buttons flex justify-center align-center font-open-sans-max">
+				<button type="button" class="flex justify-center align-center letter-spacing bold">Отменить тендер</button>
+				<button type="button" class="flex justify-center align-center letter-spacing bold">Закрыть сделку </button>
+			</div>
+		</div>
+	</form>
+	<div>
+		<div class="flex justify-between">
+			<label class="font-inter-max bold">Вам предложили участие в тендере</label>
+		</div>
+		<div class="chat flex relative">
+			<div class="chats-list flex col">
+				<form method="GET" action="" class="relative">
+					<img src="../images/edit_or_create_tender/search.svg" class="absolute">
+					<input type="search" class="flex justify-center align-center" placeholder="Поиск">
+				</form>
+				<ul>
+					<li class="active flex align-center relative">
+						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<label class="flex col">
+							<span class="name font-open-sans-mid bold letter-spacing letter-spacing">ТехноСервис</span>
+							<span class="part-message font-open-sans-mid letter-spacing letter-spacing">Добрый день! Наш...</span>
+						</label>
+						<span class="date font-open-sans-min absolute letter-spacing letter-spacing">12.09.2021</span>
+					</li>
+				</ul>
+			</div>
+			<div class="chat-active">
+				<div class="header flex align-center justify-between">
+					<div class="flex align-center">
+						<label class="font-open-sans bold">ТехноСервис</label>
+						<span class="flex">
+							<ul class="flex">
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/star.svg" alt="star">
+								</li>
+							</ul>
+							<span>16</span>
+						</span>
+					</div>
+					<span class="font-open-sans letter-spacing company-number">+38 (093) 21-10-432</span>
+				</div>
+				<div class="chat-window flex col justify-end">
+					<span class="date font-open-sans-min letter-spacing">12.09.2021</span>
+					<div class="messages flex col">
+						<span class="message right">Lorem ipsum!</span>
+						<span class="message left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</span>
+						<span class="message right">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor.</span>
+					</div>
+					<span class="read font-open-sans-min letter-spacing">Прочитано: 12.09.2021 в 10:00</span>
+				</div>
+				<form method="POST" action="" class="relative flex justify-between align-center" id="send-message">
+					<img src="../images/edit_or_create_tender/add.svg" class="absolute">
+					<textarea class="flex justify-center align-center font-open-sans-mid letter-spacing" placeholder="Введите сообщение"></textarea>
+					<button type="submite">
+						<img src="../images/edit_or_create_tender/plane.svg">
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="elipce elipce-1 orange absolute"></div>
+	<div class="elipce elipce-2 orange absolute"></div>
+	<div class="elipce elipce-3 purple absolute"></div>
+	<div class="elipce elipce-4 purple absolute"></div>
+	<div class="elipce elipce-5 blue absolute"></div>
+	<div class="elipce elipce-6 blue absolute"></div>
+</div>
