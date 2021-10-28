@@ -1,0 +1,18 @@
+a{
+	text-decoration: none;
+}
+.category{
+	padding: 2px 16px;
+}
+.text-red{
+	color: #FF0D0D;
+}
+.add-company-btn{
+	padding: 13px 70px;
+	background: rgba(75, 192, 200, 0.5);
+	border-radius: 3px;
+	cursor: pointer;
+}
+.company-number{
+	color: rgba(102, 103, 104, 0.6);
+}

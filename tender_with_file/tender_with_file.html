@@ -1,75 +1,57 @@
 <link rel="stylesheet" type="text/css" href="../flex.css">
 <link rel="stylesheet" type="text/css" href="../fonts.css">
 
-<link rel="stylesheet" type="text/css" href="edit_or_create_tender.css">
+<link rel="stylesheet" type="text/css" href="../edit_or_create_tender/edit_or_create_tender.css">
+<link rel="stylesheet" type="text/css" href="tender_with_file.css">
 
 <div class="edit-or-create-tender relative">
 	<form method="POST" action="" class="flex col edit">
 		<div class="flex justify-between">
 			<label class="font-inter-max bold">Технологическое оборудование</label>
-			<label class="save-btn flex align-center font-open-sans">Сохранить <img src="../images/edit_or_create_tender/save.svg" alt=""></label>
+			<a href="#" class="save-btn flex align-center font-open-sans">Редактировать <img src="../images/tender_with_file/edit.svg" alt=""></a>
 		</div>
 
 		<div class="flex border-bottom categories">
-			<label class="category font-open-sans flex justify-between align-center relative">Технологическое оборудование <span class="close_btn absolute"></span></label>
-			<label class="category font-open-sans sub flex justify-between align-center relative">Оборудование для национальных кухонь <span class="close_btn absolute"></span></label>
-			<label class="category font-open-sans sub flex justify-between align-center relative">Хлебопекарное и кондитерское оборудование <span class="close_btn absolute"></span></label>
-			<button type="button" class="font-open-sans btn">Добавить категорию</button>
-			<label class="relative">
-				<button type="button" class="font-open-sans btn sub">Добавить подкатегорию</button>
-				<ul class="absolute flex col">
-					<li class="active flex align-center">
-						<input type="checkbox" id="check-6">
-  						<label for="check-6">Оборудование для национальных кухонь</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-7">
-  						<label for="check-7">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-8">
-  						<label for="check-8">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-9">
-  						<label for="check-9">Название компании</label>
-					</li>
-				</ul>
-			</label>
+			<label class="category font-open-sans flex justify-between align-center relative">Технологическое оборудование</label>
+			<label class="category font-open-sans sub flex justify-between align-center relative">Оборудование для национальных кухонь</label>
+			<label class="category font-open-sans sub flex justify-between align-center relative">Хлебопекарное и кондитерское оборудование</label>
 		</div>
 
-		<div class="flex border-bottom" style="padding-bottom: 19px;">
-			<label class="flex col">
-				<span class="font-open-sans-min">срок подачи заявки</span>
-				<label for="date-application" class="flex justify-between align-center">
-					<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
-					<span class="label bold font-open-sans">_ _._ _._ _ _ _</span>
-					<input type="date" id="date-application" class="font-open-sans bold" required hidden>
+		<div class="flex justify-between border-bottom" style="padding-bottom: 19px;">
+			<div class="flex">
+				<label class="flex col">
+					<span class="font-open-sans-min">срок подачи заявки</span>
+					<label for="date-application" class="flex justify-between align-center">
+						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
+						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
+					</label>
 				</label>
-			</label>
-			<span class="border"></span>
-			<label class="flex col">
-				<span class="font-open-sans-min">количество</span>
-				<label for="number" class="flex justify-between align-center">
-					<span class="font-open-sans bold" style="margin-top: 4px;">1000</span>
-					<input type="number" id="number" class="font-open-sans bold" required hidden>
+				<span class="border"></span>
+				<label class="flex col">
+					<span class="font-open-sans-min">количество</span>
+					<label for="number" class="flex justify-between align-center">
+						<span class="font-open-sans bold" style="margin-top: 4px;">1000</span>
+						<input type="number" id="number" class="font-open-sans bold" required hidden>
+					</label>
 				</label>
-			</label>
-			<span class="border"></span>
-			<label class="flex col">
-				<span class="font-open-sans-min">срок поставки</span>
-				<label for="term-delivery" class="flex justify-between align-center">
-					<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
-					<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
-					<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
+				<span class="border"></span>
+				<label class="flex col">
+					<span class="font-open-sans-min">срок поставки</span>
+					<label for="term-delivery" class="flex justify-between align-center">
+						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
+						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
+					</label>
 				</label>
-			</label>
+			</div>
+			<span class="text-red font-open-sans">Ожидается выбор поставщика</span>
 		</div>
 
 		<div class="border-bottom" style="padding-bottom: 19px;">
 			<label for="address">
 				<img src="../images/edit_or_create_tender/address.svg" alt="" style="margin-right: 17px;">
-				<input type="text" id="address" value="г. Днепр, ул. Выс" class="font-open-sans bold" required>
+				<input type="text" id="address" value="Адресс доставки" class="font-open-sans bold" required>
 			</label>
 		</div>
 
@@ -85,27 +67,18 @@
 			<label class="font-open-sans bold">Вложенные файлы</label>
 			<div class="flex align-center files">
 				<span class="picture relative">
-					<img src="../images/edit_or_create_tender/picture_1.jpg" alt="">
-					<span class="close_btn absolute"></span>
+					<img src="../images/tender_with_file/picture_1.jpg" alt="">
 				</span>
 				<span class="picture relative">
-					<img src="../images/edit_or_create_tender/picture_2.jpg" alt="">
-					<span class="close_btn absolute"></span>
+					<img src="../images/tender_with_file/picture_2.jpg" alt="">
+				</span>
+				<span class="picture relative">
+					<img src="../images/tender_with_file/picture_3.jpg" alt="">
 				</span>
 				<span class="file flex justify-center align-center col relative">
 					<img src="../images/edit_or_create_tender/file.svg">
 					<label class="margin font-open-sans-mid">Название документа</label>
 					<label class="font-open-sans-min">Вес: 20 MB</label>
-					<span class="close_btn absolute"></span>
-				</span>
-				<span class="drug-and-drop flex justify-center align-center col">
-					<img src="../images/edit_or_create_tender/file.svg">
-					<label class="margin font-open-sans-mid">Drug and drop file here</label>
-					<label class="font-open-sans-min">Формат файлов: MPEG</label>
-					<label for="drug-drop" class="select-file flex justify-center align-center bold font-open-sans-mid">Выбрать файл</label>
-					<label class="font-open-sans-min">Максимальный размер: 20 MB</label>
-
-					<input type="file" id="drug-drop" required hidden>
 				</span>
 			</div>
 			<div class="buttons flex justify-center align-center font-open-sans-max">
@@ -117,32 +90,7 @@
 	<div>
 		<div class="flex justify-between">
 			<label class="font-inter-max bold">В тендере учавствует 26 компаний</label>
-			<form method="GET" action="" class="search relative">
-				<img src="../images/edit_or_create_tender/search.svg" class="absolute">
-				<input type="text" class="flex justify-center align-center font-open-sans-max letter-spacing" value="Мебельная стр">
-				<ul class="absolute flex col">
-					<li class="active flex align-center">
-						<input type="checkbox" id="check-1">
-  						<label for="check-1">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-2">
-  						<label for="check-2">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-3">
-  						<label for="check-3">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-4">
-  						<label for="check-4">Название компании</label>
-					</li>
-					<li class="flex align-center">
-						<input type="checkbox" id="check-5">
-  						<label for="check-5">Название компании</label>
-					</li>
-				</ul>
-			</form>
+			<input type="submit" class="flex justify-center align-center font-open-sans-max letter-spacing bold add-company-btn" value="Добавить компанию">
 		</div>
 
 		<div class="chat flex relative">
@@ -219,28 +167,31 @@
 				</ul>
 			</div>
 			<div class="chat-active">
-				<div class="header flex align-center">
-					<label class="font-open-sans bold">ТехноСервис</label>
-					<span class="flex">
-						<ul class="flex">
-							<li>
-								<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
-							</li>
-							<li>
-								<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
-							</li>
-							<li>
-								<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
-							</li>
-							<li>
-								<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
-							</li>
-							<li>
-								<img src="../images/edit_or_create_tender/star.svg" alt="star">
-							</li>
-						</ul>
-						<span>16</span>
-					</span>
+				<div class="header flex align-center justify-between">
+					<div class="flex align-center">
+						<label class="font-open-sans bold">ТехноСервис</label>
+						<span class="flex">
+							<ul class="flex">
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+								</li>
+								<li>
+									<img src="../images/edit_or_create_tender/star.svg" alt="star">
+								</li>
+							</ul>
+							<span>16</span>
+						</span>
+					</div>
+					<span class="font-open-sans letter-spacing company-number">+38 (093) 21-10-432</span>
 				</div>
 				<div class="chat-window flex col justify-end">
 					<span class="date font-open-sans-min letter-spacing">12.09.2021</span>
