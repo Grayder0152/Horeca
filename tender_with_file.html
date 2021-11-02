@@ -1,15 +1,14 @@
-<link rel="stylesheet" type="text/css" href="../flex.css">
-<link rel="stylesheet" type="text/css" href="../fonts.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/flex.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
 
-<link rel="stylesheet" type="text/css" href="../edit_or_create_tender/edit_or_create_tender.css">
-<link rel="stylesheet" type="text/css" href="../tender_with_file/tender_with_file.css">
-<link rel="stylesheet" type="text/css" href="popup_img.css">
+<link rel="stylesheet" type="text/css" href="css/tender.css">
 
 <div class="edit-or-create-tender relative">
 	<form method="POST" action="" class="flex col edit">
 		<div class="flex justify-between">
 			<label class="font-inter-max bold">Технологическое оборудование</label>
-			<a href="#" class="save-btn flex align-center font-open-sans">Редактировать <img src="../images/tender_with_file/edit.svg" alt=""></a>
+			<a href="#" class="save-btn flex align-center font-open-sans">Редактировать <img src="img/icons/edit.svg" alt=""></a>
 		</div>
 
 		<div class="flex border-bottom categories">
@@ -23,7 +22,7 @@
 				<label class="flex col">
 					<span class="font-open-sans-min">срок подачи заявки</span>
 					<label for="date-application" class="flex justify-between align-center">
-						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<img src="img/icons/clock.svg" alt="clock" class="clock-icon">
 						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
 						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
 					</label>
@@ -40,7 +39,7 @@
 				<label class="flex col">
 					<span class="font-open-sans-min">срок поставки</span>
 					<label for="term-delivery" class="flex justify-between align-center">
-						<img src="../images/edit_or_create_tender/clock.svg" alt="clock" class="clock-icon">
+						<img src="img/icons/clock.svg" alt="clock" class="clock-icon">
 						<span class="label bold font-open-sans" hidden>_ _._ _._ _ _ _</span>
 						<input type="date" id="term-delivery" value="2021-10-12" class="font-open-sans bold" style="margin-top: 4px;" required>
 					</label>
@@ -51,7 +50,7 @@
 
 		<div class="border-bottom" style="padding-bottom: 19px;">
 			<label for="address">
-				<img src="../images/edit_or_create_tender/address.svg" alt="" style="margin-right: 17px;">
+				<img src="img/icons/address.svg" alt="" style="margin-right: 17px;">
 				<input type="text" id="address" value="Адресс доставки" class="font-open-sans bold" required>
 			</label>
 		</div>
@@ -68,23 +67,23 @@
 			<label class="font-open-sans bold">Вложенные файлы</label>
 			<div class="flex align-center files">
 				<span class="picture relative">
-					<img src="../images/tender_with_file/picture_1.jpg" alt="">
+					<img src="img/picture_0.jpg" alt="">
 				</span>
 				<span class="picture relative">
-					<img src="../images/tender_with_file/picture_2.jpg" alt="">
+					<img src="img/picture_1.jpg" alt="">
 				</span>
 				<span class="picture relative">
-					<img src="../images/tender_with_file/picture_3.jpg" alt="">
+					<img src="img/picture_2.jpg" alt="">
 				</span>
 				<span class="file flex justify-center align-center col relative">
-					<img src="../images/edit_or_create_tender/file.svg">
+					<img src="img/icons/file.svg">
 					<label class="margin font-open-sans-mid">Название документа</label>
 					<label class="font-open-sans-min">Вес: 20 MB</label>
 				</span>
 			</div>
 			<div class="buttons flex justify-center align-center font-open-sans-max">
-				<button type="button" class="flex justify-center align-center letter-spacing">Отменить тендер</button>
-				<button type="button" class="flex justify-center align-center letter-spacing">Закрыть сделку </button>
+				<button type="button" class="flex justify-center align-center letter-spacing bold">Отменить тендер</button>
+				<button type="button" class="flex justify-center align-center letter-spacing bold">Закрыть сделку </button>
 			</div>
 		</div>
 	</form>
@@ -97,12 +96,12 @@
 		<div class="chat flex relative">
 			<div class="chats-list flex col">
 				<form method="GET" action="" class="relative">
-					<img src="../images/edit_or_create_tender/search.svg" class="absolute">
+					<img src="img/icons/search.svg" class="absolute">
 					<input type="search" class="flex justify-center align-center" placeholder="Поиск">
 				</form>
 				<ul>
 					<li class="active flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing letter-spacing">ТехноСервис</span>
 							<span class="part-message font-open-sans-mid letter-spacing letter-spacing">Добрый день! Наш...</span>
@@ -110,7 +109,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing letter-spacing">Текст текст текст</span>
@@ -118,7 +117,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -126,7 +125,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -134,7 +133,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -142,7 +141,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -150,7 +149,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -158,7 +157,7 @@
 						<span class="date font-open-sans-min absolute letter-spacing">12.09.2021</span>
 					</li>
 					<li class="flex align-center relative">
-						<img src="../images/edit_or_create_tender/avatar.svg" alt="avatar">
+						<img src="img/icons/avatar.svg" alt="avatar">
 						<label class="flex col">
 							<span class="name font-open-sans-mid bold letter-spacing">Компания</span>
 							<span class="part-message font-open-sans-mid letter-spacing">Текст текст текст</span>
@@ -174,19 +173,19 @@
 						<span class="flex">
 							<ul class="flex">
 								<li>
-									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									<img src="img/icons/active-star.svg" alt="active-star">
 								</li>
 								<li>
-									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									<img src="img/icons/active-star.svg" alt="active-star">
 								</li>
 								<li>
-									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									<img src="img/icons/active-star.svg" alt="active-star">
 								</li>
 								<li>
-									<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									<img src="img/icons/active-star.svg" alt="active-star">
 								</li>
 								<li>
-									<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									<img src="img/icons/star.svg" alt="star">
 								</li>
 							</ul>
 							<span>16</span>
@@ -204,10 +203,10 @@
 					<span class="read font-open-sans-min letter-spacing">Прочитано: 12.09.2021 в 10:00</span>
 				</div>
 				<form method="POST" action="" class="relative flex justify-between align-center" id="send-message">
-					<img src="../images/edit_or_create_tender/add.svg" class="absolute">
+					<img src="img/icons/add.svg" class="absolute">
 					<textarea class="flex justify-center align-center font-open-sans-mid letter-spacing" placeholder="Введите сообщение"></textarea>
 					<button type="submite">
-						<img src="../images/edit_or_create_tender/plane.svg">
+						<img src="img/icons/plane.svg">
 					</button>
 				</form>
 			</div>
@@ -220,12 +219,4 @@
 	<div class="elipce elipce-4 purple absolute"></div>
 	<div class="elipce elipce-5 blue absolute"></div>
 	<div class="elipce elipce-6 blue absolute"></div>
-</div>
-<div class="popup-img flex justify-center align-center">
-	<div class="block flex justify-center align-center">
-		<div class="relative">
-			<span class="popup_close_btn absolute"></span>
-			<img src="../images/popup_img/picture.jpg">
-		</div>
-	</div>
 </div>
