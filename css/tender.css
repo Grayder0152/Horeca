@@ -209,14 +209,13 @@ form.search input[type="text"]{
 
 	padding-left: 43px;
 }
-form.search input[type='checkbox'],
-.categories input[type='checkbox']{
+input.checkbox+label::before{
 	min-width: 16px;
-	min-height: 16px;
-
-	background: #FFFFFF;
-	border: 1px solid #D9D9D9;
-	border-radius: 2px;
+	width: 16px;
+	height: 16px;
+}
+input.checkbox+label{
+	align-items: start;
 }
 form.search ul,
 .categories ul{

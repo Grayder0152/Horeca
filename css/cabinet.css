@@ -74,7 +74,7 @@
 	border: 1px solid #D9D9D9;
 	border-radius: 4px;
 }
-.cabinet-info form input,
+.cabinet-info form input:not(.checkbox),
 .cabinet-info form select{
 	width: 100%;
 	background: #FFFFFF;
@@ -82,6 +82,16 @@
 	border-radius: 3px;
 	padding: 11px 12px;
 	margin-top: 4px;
+}
+.cabinet-info form input:focus{
+	border: 1px solid #4BC0C8;
+	color: #4BC0C8;
+}
+.cabinet-info form ul{
+	gap: 50px;
+}
+.cabinet-info form ul li{
+	gap: 8px;
 }
 select{
 	padding-right: 30px!important;
@@ -93,23 +103,6 @@ select{
 
 select.disabled {
 	color: rgba(102, 103, 104, 0.6)
-}
-.cabinet-info form input:focus{
-	border: 1px solid #4BC0C8;
-	color: #4BC0C8;
-}
-.cabinet-info form input.checkbox{
-	width: 20px;
-	height: 20px;
-	background: #FFFFFF;
-	border: 1px solid #D9D9D9;
-	border-radius: 2px;
-}
-.cabinet-info form ul{
-	gap: 50px;
-}
-.cabinet-info form ul li{
-	gap: 8px;
 }
 select+span{
 	position: absolute;

@@ -1,3 +1,6 @@
+select+span{
+	top: 20px;
+}
 .gray{
 	color: rgba(102, 103, 104, 0.6);
 }
@@ -30,19 +33,6 @@ form.search-suppliers input[type="text"]{
 }
 .cities ul li label{
 	cursor: pointer;
-}
-form input.checkbox{
-	width: 20px;
-	height: 20px;
-	background: #FFFFFF;
-	border: 1px solid #D9D9D9;
-	border-radius: 2px;
-	margin-right: 8px;
-}
-form input.checkbox:checked{
-	border: 1px solid #4BC0C8;
-	background: #FFFFFF;
-	color: #4BC0C8;
 }
 form.search-suppliers .place input[type="text"]{
 	width: 360px;
@@ -80,42 +70,50 @@ form.filters span{
 	display: block;
 	cursor: pointer;
 	color: rgba(102, 103, 104, 0.6);
+	padding-right: 10px;
 }
 form.filters span.active{
 	color: #26292E;
 }
-form.filters span::before,
-form.filters span::after{
+form.filters span .arrow{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translate(50%);
+}
+form.filters span .arrow::before,
+form.filters span .arrow::after{
 	display: block;
 	width: 10px;
 	height: 2px;
 	content: "";
 	background: rgba(102, 103, 104, 0.6);
 	position: absolute;
+	top: 0;
 	right: 0;
 }
-form.filters span::before{
+form.filters span .arrow::before{
 	transform: translateY(-50%) rotate(45deg);
-	top: 30%;
+	top: 1px;
 	width: 8px;
-	right: 3px;
+	right: 2px;
 }
-form.filters span::after{
+form.filters span .arrow::after{
 	transform: translateY(-50%) rotate(-45deg);
-	top: 58%;
-	right: 1.4px;
+	top: 7px;
+	right: .5px;
 }
-form.filters span.active::before,
-form.filters span.active::after{
+form.filters span.active .arrow::before,
+form.filters span.active .arrow::after{
 	width: 10px;
+	top: 1px;
 	background: #26292E;
-	top: 50%;
 }
-form.filters span.active::before{
+form.filters span.active .arrow::before{
 	transform: translateY(-50%) rotate(35deg);
 	right: 7px;
 }
-form.filters span.active::after{
+form.filters span.active .arrow::after{
 	transform: translateY(-50%) rotate(-35deg);
 	right: 0;
 }
