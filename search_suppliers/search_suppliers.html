@@ -1,0 +1,598 @@
+<link rel="stylesheet" type="text/css" href="../flex.css">
+<link rel="stylesheet" type="text/css" href="../fonts.css">
+
+<link rel="stylesheet" type="text/css" href="../my_tender/my_tender.css">
+<link rel="stylesheet" type="text/css" href="search_suppliers.css">
+
+
+<div class="my-item flex justify-center col">
+	<span class="font-inter-max bold uppercase">Поставщики</span>
+	<form method="GET" action="" class="flex align-center search-suppliers">
+		<input type="text" placeholder="Поиск" class="font-open-sans-13">
+		<label class="place relative">
+			<input type="text" placeholder="Место оказания услуг" class="active font-open-sans-13">
+			<span class="arrow active absolute"></span>
+		</label>
+		<label for="check-1" class="flex align-center">
+			<input type="checkbox" class="checkbox" id="check-1">
+			<span class="font-open-sans-13 gray">Вся Украина</span>
+		</label>
+	</form>
+	<div class="flex">
+		<form method="GET" action="" class="filters">
+			<div>
+				<span class="font-open-sans-max relative active">Технологическое оборудование</span>
+				<ul>
+					<li class="font-open-sans-13 active flex align-center">
+						<input type="checkbox" class="checkbox" id="check-2" checked>
+						<label for="check-2">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-3">
+						<label for="check-3">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-4">
+						<label for="check-4">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-5">
+						<label for="check-5">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-6">
+						<label for="check-6">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-7">
+						<label for="check-7">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-8">
+						<label for="check-8">
+							Подкатегория
+						</label>
+					</li>
+					<li class="font-open-sans-13 gray flex align-center">
+						<input type="checkbox" class="checkbox" id="check-9">
+						<label for="check-9">
+							Подкатегория
+						</label>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Услуги</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Интерьер, мебель, экстерьер</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Строительство и ремонт</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Текстиль, униформа</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Банки и страховые компании</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Финансовые и юридические услуги</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Чистота и гигиена</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Продукты питания</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Напитки</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Свет, звук, мультимедиа</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Спорт, отдых и развлечения</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Табачные изделия и аксессуары</span>
+			</div>
+			<div>
+				<span class="font-open-sans-max relative">Автоматизация</span>
+			</div>
+		</form>
+		<div class="suppliers flex col">
+			<ul class="items flex col">
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Интерьер, мебель, экстерьер</li>
+								<li class="item-category sub sub-min font-open-sans-min">Мебель</li>
+								<li class="item-category sub sub-min font-open-sans-min">Барные стойки</li>
+								<li class="item-category sub sub-min font-open-sans-min">Тенты, маркизы, зонты, шатры, перголы</li>
+								<li class="item-category sub sub-min font-open-sans-min">Предметы интерьера и экстерьера</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between col item">
+					<div class="flex align-center justify-between">
+						<div class="item-description flex align-center">
+							<div class="item-avatar relative">
+								<img src="../images/search-suppliers/avatar-1.jpg">
+								<span class="item-rating flex absolute justify-between align-center">
+									<ul class="flex">
+										<li>
+											<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+										</li>
+										<li>
+											<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+										</li>
+										<li>
+											<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+										</li>
+										<li>
+											<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+										</li>
+										<li>
+											<img src="../images/edit_or_create_tender/star.svg" alt="star">
+										</li>
+									</ul>
+									<span class="font-open-sans-10 bold">120</span>
+								</span>
+							</div>
+							<div class="flex justify-between col" style="gap:8px">
+								<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+								<ul class="item-categories flex">
+									<li class="item-category sub-min font-open-sans-min">Интерьер, мебель, экстерьер</li>
+									<li class="item-category sub sub-min font-open-sans-min">Мебель</li>
+									<li class="item-category sub sub-min font-open-sans-min">Барные стойки</li>
+									<li class="item-category sub sub-min font-open-sans-min">Тенты, маркизы, зонты, шатры, перголы</li>
+									<li class="item-category sub sub-min font-open-sans-min">Мебель уличная</li>
+								</ul>
+								<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя...</span>
+								<div class="item-contact flex align-center">
+									<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+									<span class="font-open-sans-15 bold">info@gmail.com</span>
+									<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+								</div>
+							</div>
+						</div>
+						<div class="item-links flex col justify-between">
+							<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+							<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+						</div>
+					</div>
+					<div class="slider flex justify-between align-center">
+						<span class="slide-arrow arrow-prev relative"></span>
+						<div class="slides flex justify-between align-center">
+							<div class="slide flex justify-between align-center col">
+								<img src="../images/search-suppliers/avatar-2.jpg" class="slide-avatar">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans">Ресторан</span>
+								<span class="slide-text font-open-sans-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</span>
+							</div>
+							<div class="slide flex justify-between align-center col">
+								<img src="../images/my_tender/avatar.jpg" class="slide-avatar">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+								</ul>
+								<span class="font-open-sans">Ресторан</span>
+								<span class="slide-text font-open-sans-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</span>
+							</div>
+							<div class="slide flex justify-between align-center col">
+								<img src="../images/my_tender/avatar.jpg" class="slide-avatar">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans">Ресторан</span>
+								<span class="slide-text font-open-sans-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</span>
+							</div>
+							<div class="slide flex justify-between align-center col">
+								<img src="../images/my_tender/avatar.jpg" class="slide-avatar">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans">Ресторан</span>
+								<span class="slide-text font-open-sans-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula</span>
+							</div>
+						</div>
+						<span class="slide-arrow arrow-next relative"></span>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+				<li class="flex align-center justify-between item">
+					<div class="item-description flex align-center">
+						<div class="item-avatar relative">
+							<img src="../images/my_tender/avatar.jpg">
+							<span class="item-rating flex absolute justify-between align-center">
+								<ul class="flex">
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/active-star.svg" alt="active-star">
+									</li>
+									<li>
+										<img src="../images/edit_or_create_tender/star.svg" alt="star">
+									</li>
+								</ul>
+								<span class="font-open-sans-10 bold">16</span>
+							</span>
+						</div>
+						<div class="flex justify-between col" style="gap:8px">
+							<span class="item-name font-inter-max bold">ООО “Мебельная страна”</span>
+							<ul class="item-categories flex">
+								<li class="item-category sub-min font-open-sans-min">Категория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+								<li class="item-category sub sub-min font-open-sans-min">Подкатегория</li>
+							</ul>
+							<span class="item-text font-open-sans-13">Информация о предоставляемых услугах Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя Информация о себе, реклама себя...</span>
+							<div class="item-contact flex align-center">
+								<span class="font-open-sans-15 bold">+38 (093) 451-36-36</span>
+								<span class="font-open-sans-15 bold">info@gmail.com</span>
+								<span class="font-open-sans-15 bold">www.sitesitesite.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="item-links flex col justify-between">
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Написать</a>
+						<a href="#" class="flex justify-center align-center letter-spacing bold">Смотреть отзывы</a>
+					</div>
+				</li>
+			</ul>
+			<div class="paginator flex justify-center align-center">
+				<!-- <a href="#" class="arrow arrow-prev relative active"></a> -->
+				<ul class="flex font-inter-mid">
+					<li><a href="#" class="flex justify-center align-center active">1</a></li>
+					<li><a href="#" class="flex justify-center align-center">2</a></li>
+					<li><a href="#" class="flex justify-center align-center">3</a></li>
+					<li><a href="#" class="flex justify-center align-center">...</a></li>
+					<li><a href="#" class="flex justify-center align-center">10</a></li>
+				</ul>
+				<a href="#" class="arrow relative active"></a>
+			</div>
+		</div>
+	</div>
+</div>

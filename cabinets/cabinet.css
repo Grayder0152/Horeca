@@ -1,0 +1,173 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+body{
+	background: #E5E5E5;
+}
+.cabinet{
+	max-width: 1080px;
+	margin: 0 auto;
+	gap: 32px;
+}
+.color-1,
+.active{
+	color: #4BC0C8;
+}
+.color-2{
+	color: #26292E;
+}
+.cabinet-header{
+	gap: 24px;
+	padding: 32px 0;
+	border-bottom: 1px solid #D9D9D9;
+}
+.cabinet-header img{
+	max-width: 160px;
+	border-radius: 50%;
+}
+.cabinet-header .dot{
+	width: 6px;
+	height: 6px;
+	background: #26292E;
+	border-radius: 50%;
+	margin: 0 23px 0 29px;
+}
+
+.cabinet-menu{
+	width: 344px;
+	max-width: 344px;
+}
+.cabinet-menu ul{
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+}
+.cabinet-menu ul li a{
+	display: block;
+	padding: 8px 21px;
+	border-bottom: 1px solid #D9D9D9;
+}
+.cabinet-menu ul li:last-child a{
+	border-bottom: 0;
+}
+.cabinet-menu ul li a.active{
+	border-left: 4px solid #4BC0C8;
+}
+.cabinet-menu .create-button{
+	display: block;
+	width: 100%;
+	padding: 13px 0;
+	margin-top: 14px;
+	text-align: center;
+	background: #FEAC5E;
+	color: #FFFFFF;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+
+.cabinet-info{
+	width: 711px;
+	max-width: 711px;
+	margin-left: 24px;
+	gap: 24px;
+}	
+.cabinet-info form{
+	padding: 16px 25px 35px;
+	gap: 8px;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+}
+.cabinet-info form input,
+.cabinet-info form select{
+	width: 100%;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 3px;
+	padding: 11px 12px;
+	margin-top: 4px;
+}
+select{
+	padding-right: 30px!important;
+	-moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    cursor: pointer;
+}
+
+select.disabled {
+	color: rgba(102, 103, 104, 0.6)
+}
+.cabinet-info form input:focus{
+	border: 1px solid #4BC0C8;
+	color: #4BC0C8;
+}
+.cabinet-info form input.checkbox{
+	width: 20px;
+	height: 20px;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 2px;
+}
+.cabinet-info form ul{
+	gap: 50px;
+}
+.cabinet-info form ul li{
+	gap: 8px;
+}
+select+span{
+	position: absolute;
+	top: 42px;
+	right: 18px;
+	width: 8px;
+	height: 2px;
+}
+select+span::before,
+select+span::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height:100%;
+	background: #A3A4A4;
+}
+select+span::before{
+	transform: rotate(40deg);
+}
+select+span::after{
+	transform: rotate(-40deg);
+	right: -5px;
+}
+.group select+span{
+	top: 25px;
+}
+.group div{
+	width: 100%;
+	max-width: 200px;
+}
+
+.buttons button{
+	width: 320px;
+	padding: 13px 0;
+	border-radius: 3px;
+	cursor: pointer;
+} 
+.buttons button:first-child{
+	border: 1px solid #4BC0C8;
+	background: transparent;
+	color: #4BC0C8;
+}
+.buttons button:last-child{
+	background: #4BC0C8;
+	color: #FFFFFF;
+}
+.required::after{
+	content: "*";
+	color: #FF0000;
+}

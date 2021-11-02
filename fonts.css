@@ -6,6 +6,12 @@
 	font-size: 24px;
 	line-height: 29px;
 }
+.font-inter-mid{
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+}
 .font-open-sans{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
@@ -15,6 +21,21 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
+}
+.font-open-sans-13{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	line-height: 18px;
+
+	/* текст */
+	color: #26292E;
+}
+.font-open-sans-15{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+
+	color: #26292E;
 }
 .font-open-sans-mid{
 	font-family: 'Open Sans', sans-serif;
@@ -28,9 +49,19 @@
 
 	color: #C4C4C4;
 }
+.font-open-sans-10{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
+	line-height: 14px;
+
+	color: #26292E;
+}
 .bold{
 	font-weight: 600;
 }
 .letter-spacing{
 	letter-spacing: 0.2px;
+}
+.uppercase{
+	text-transform: uppercase;
 }

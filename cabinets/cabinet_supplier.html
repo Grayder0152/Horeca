@@ -1,0 +1,152 @@
+<link rel="stylesheet" type="text/css" href="../flex.css">
+<link rel="stylesheet" type="text/css" href="../fonts.css">
+
+<link rel="stylesheet" type="text/css" href="cabinet.css">
+
+<div class="cabinet flex col">
+	<div class="cabinet-header flex align-center">
+		<img src="../images/logo.jpg" alt="avatar">
+		<div class="flex justify-between col">
+			<span class="font-inter-max bold">Чернявская Ольга Валерьевна</span>
+			<span class="font-open-sans flex align-center">ООО “Мебельная страна”<span class="dot"></span>Руководитель отдела продаж</span>
+			<a href="#" class="font-open-sans-13 color-1">Изменить обложку профиля</a>
+		</div>
+	</div>
+	<div class="flex">
+		<div class="cabinet-menu">
+			<ul>
+				<li><a href="#" class="font-open-sans active">Общая информация</a></li>
+				<li><a href="#" class="font-open-sans color-2">Мои объявления</a></li>
+				<li><a href="#" class="font-open-sans color-2">Мои рекомендации</a></li>
+				<li><a href="#" class="font-open-sans color-2">Смена пароля</a></li>
+			</ul>
+		</div>
+		<div class="cabinet-info flex col">
+			<form method="POST" action="" class="flex col">
+				<span class="font-inter-max bold">Данные представителя</span>
+
+				<span class="flex col">
+					<label class="font-open-sans-13">ФИО</label>
+					<input type="text" class="font-open-sans-13" value="Чернявская Ольга Валерьевна" placeholder="ФИО">
+				</span>
+
+				<span class="flex col">
+					<label class="font-open-sans-13">Компания</label>
+					<input type="text" class="font-open-sans-13" value="ООО “Мебельная страна”" placeholder="Компания">
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13">Должность</label>
+					<input type="text" class="font-open-sans-13" value="Руководитель продаж" placeholder="Должность">
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13">Эл. почта</label>
+					<input type="email" class="font-open-sans-13" value="info@gmail.com" placeholder="Эл. почта">
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13">Телефон</label>
+					<input type="phone" class="font-open-sans-13" value="+38 (093) 451-36-36" placeholder="Телефон">
+				</span>
+			</form>
+			<form method="POST" action="" class="flex col">
+				<span class="font-inter-max bold">Компания</span>
+				<span class="flex col">
+					<label class="font-open-sans-13">Сайт компании</label>
+					<input type="text" class="font-open-sans-13" value="www.mebli.com.ua" placeholder="Сайт компании">
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13 required">Контактное лицо</label>
+					<input type="text" class="font-open-sans-13" placeholder="ФИО">
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13">Телефон</label>
+					<input type="phone" class="font-open-sans-13" value="+38 (093) 451-36-36" placeholder="Телефон">
+				</span>
+				<span class="flex col relative">
+					<label class="font-open-sans-13">Пакет</label>
+					<select class="font-open-sans-13">
+						<option value="Пакет А" class="font-open-sans-13" selected>Пакет А</option>
+					</select>
+					<span></span>
+				</span>
+			</form>
+			<form method="POST" action="" class="flex col">
+				<span class="font-inter-max bold">Поставка</span>
+
+				<span class="flex col">
+					<label class="font-open-sans-13">Группа товаров</label>
+					<div class="group flex justify-between">
+						<div class="relative">
+							<select class="font-open-sans-13">
+								<option value="Мебель" class="font-open-sans-13" selected>Мебель</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="relative">
+							<select class="font-open-sans-13">
+								<option value="Мебель" class="font-open-sans-13" selected>Мебель</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="relative">
+							<select class="font-open-sans-13 disabled">
+								<option class="font-open-sans-13" selected>Группа товаров</option>
+							</select>
+							<span></span>
+						</div>
+					</div>
+				</span>
+
+				<span class="flex col">
+					<label class="font-open-sans-13">Подгруппа товаров</label>
+					<div class="group flex justify-between">
+						<div class="relative">
+							<select class="font-open-sans-13">
+								<option value="Кухонная мебель" class="font-open-sans-13" selected>Кухонная мебель</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="relative">
+							<select class="font-open-sans-13">
+								<option value="Мебель для спальни" class="font-open-sans-13" selected>Мебель для спальни</option>
+							</select>
+							<span></span>
+						</div>
+						<div class="relative">
+							<select class="font-open-sans-13 disabled">
+								<option class="font-open-sans-13" selected>Подгруппа товаров</option>
+							</select>
+							<span></span>
+						</div>
+					</div>
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13 required">Город</label>
+					<select class="font-open-sans-13 disabled">
+						<option class="font-open-sans-13">Город</option>
+					</select>
+					<span></span>
+				</span>
+				<span class="flex col">
+					<label class="font-open-sans-13 required">Города в которые может осуществляться доставка</label>
+					<select class="font-open-sans-13 disabled">
+						<option class="font-open-sans-13" selected>Город, Город, Город</option>
+					</select>
+					<span></span>
+				</span>
+				<ul class="flex">
+					<li class="font-open-sans-13 flex align-center">
+						<input type="checkbox" class="checkbox" id="check-5">
+						<label for="check-5">
+							По всей Украине
+						</label>
+					</li>
+				</ul>
+			</form>
+			<div class="buttons flex justify-between align-center">
+				<button type="button" class="flex justify-center align-center font-open-sans-max letter-spacing bold">Отменить</button>
+				<button type="button" class="flex justify-center align-center font-open-sans-max letter-spacing bold">Сохранить</button>
+			</div>
+		</div>
+	</div>
+
+</div>
